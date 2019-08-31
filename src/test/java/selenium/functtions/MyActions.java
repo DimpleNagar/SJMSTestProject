@@ -1,6 +1,7 @@
 package selenium.functtions;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,10 +20,11 @@ public class MyActions {
 	public void setup() throws Exception {
 
 		WebDriverManager.chromedriver().setup();
+		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}
-//	@Test
+	@Test
 	public void performDoubleClick()
 	{
 		SeleniumBasicFunstions obj=new SeleniumBasicFunstions();
@@ -40,7 +42,7 @@ public class MyActions {
 		
 	}
 
-//	@Test
+	@Test
 	public void performDragDrop()
 	{
 		
@@ -62,7 +64,7 @@ public class MyActions {
 		
 	}
 	
-//	@Test
+	@Test
 	public void selectSubMenu() {
 		
 		driver.navigate().to("https://www.seleniumeasy.com/test/table-pagination-demo.html");
@@ -88,8 +90,33 @@ public class MyActions {
 		Actions act = new Actions(driver);
 		WebElement eleRange = driver.findElement(By.xpath("//*[@id=\"slider1\"]/div/input"));
 		act.clickAndHold(eleRange).moveByOffset(60, 0).release().build().perform();
+		
+		
 	}
 	
+	@Test(description = " How to select a text using ctrl+ a , copy text from one input to other ")
+	public void selectAll()
+	{
+		
+		driver.navigate().to("https://sso.rajasthan.gov.in/signin");
+		
+		// enter user name
+		WebElement eleUsername =  driver.findElement(By.id("cpBody_txt_Data1"));
+		eleUsername.sendKeys("adsds");
+		
+		// now select the text
+		
+		eleUsername.sendKeys(Keys.chord(Keys.CONTROL,"a"));
+		
+		eleUsername.sendKeys(Keys.chord(Keys.CONTROL,"c"));
+		
+		// now found another input element
+		WebElement elPassword = driver.findElement(By.id("cpBody_txt_Data2"));
+		
+		elPassword.sendKeys(Keys.chord(Keys.CONTROL,"v"));
+		
+		
+	}
 	
 	public void wait(int seconds) {
 

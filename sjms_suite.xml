@@ -20,8 +20,8 @@
 		<classes>
 
 			<!-- <class name="selenium.functtions.SeleniumBasicFunstions"></class> -->
-			<!-- <class name="selenium.functtions.MyActions"></class> -->
-			<class name="selenium.functtions.Newatrocity"></class>
+			<class name="selenium.functtions.MyActions"></class>
+			<!-- <class name="selenium.functtions.Newatrocity"></class> -->
 			
 
 		</classes>
