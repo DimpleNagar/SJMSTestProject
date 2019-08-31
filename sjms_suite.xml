@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Suite -> test-> classes->class1-method -->
+<suite name="SJMS_est_Suite">
+
+	<parameters>
+		<parameter name="browser" value="chrome"></parameter>
+	</parameters>
+
+	<!-- <test name="TestNGExamples"> How to configure groups <run> <groups> 
+		<include name="regression"></include> <include name="high"></include> </groups> 
+		</run> <classes> <class name="sjms.testng.BeforeAfterAnnotationTest"></class> 
+		<class name="sjms.testng.TestngPerameter"></class> <class name="sjms.testng.TestNGGroups"></class> 
+		</classes> </test> -->
+
+	<!-- <test name="DP Test"> <classes> <class name="sjms.testng.TestNGDataProvider"></class> 
+		</classes> </test> <test name="TestAtrocity"> <classes> <class name="sjms.Newjava"></class> 
+		</classes> </test> -->
+	<test name="Selenium Basics">
+
+		<classes>
+
+			<!-- <class name="selenium.functtions.SeleniumBasicFunstions"></class> -->
+			<!-- <class name="selenium.functtions.MyActions"></class> -->
+			<class name="selenium.functtions.Newatrocity"></class>
+			
+
+		</classes>
+	</test>
+
+<!-- 	<test>
+		<test name="Citizenlogin">
+			<classes>
+				<class name="javatest.Citizen"></class>
+			</classes>
+		</test> -->
+
+
+</suite>
