@@ -6,6 +6,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -24,7 +25,7 @@ public class IESpecficSettings {
 		
 		WebDriverManager.iedriver().setup();  // it will download the iedriver.exe 
 		
-		driver = new InternetExplorerDriver(cap); // now  ie related settings handled automatically so u don't need to use these settings
+		driver = new InternetExplorerDriver(); // now  IE related settings handled automatically so u don't need to use these settings
 		
 
 	}

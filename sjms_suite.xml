@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Suite -> test-> classes->class1-method -->
-<suite name="SJMS_est_Suite">
+<suite name="SJMS_test_Suite">
 
+	<listeners>
+		<listener
+			class-name="com.aventstack.extentreports.testng.listener.ExtentIReporterSuiteListenerAdapter">
+			</listener>
+	</listeners>
+	
 	<parameters>
 		<parameter name="browser" value="chrome"></parameter>
 	</parameters>
@@ -22,17 +28,14 @@
 			<!-- <class name="selenium.functtions.SeleniumBasicFunstions"></class> -->
 			<class name="selenium.functtions.MyActions"></class>
 			<!-- <class name="selenium.functtions.Newatrocity"></class> -->
-			
+
 
 		</classes>
 	</test>
 
-<!-- 	<test>
-		<test name="Citizenlogin">
-			<classes>
-				<class name="javatest.Citizen"></class>
-			</classes>
-		</test> -->
+
+	<!-- <test> <test name="Citizenlogin"> <classes> <class name="javatest.Citizen"></class> 
+		</classes> </test> -->
 
 
 </suite>

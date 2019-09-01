@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme : standard, dark  -->
+        <theme>standard</theme>
+        <encoding>UTF-8</encoding>
+        <enableTimeline>false</enableTimeline>
+        <protocol>https</protocol>
+        <documentTitle>SJMSTestProject Test Dashboard</documentTitle>
+        <reportName>SJMSTestProject Test report : Build No 01</reportName>
+		<!-- timestamp format -->
+		<timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+        <scripts><![CDATA[
+                $(document).ready(function() {});]]></scripts>
+        
+        <!-- custom styles -->
+        <styles><![CDATA[ ]]>
+        </styles>
+    </configuration>
+</extentreports>
